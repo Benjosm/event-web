@@ -1,0 +1,51 @@
+# FastAPI/Uvicorn
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Python cache
+.cache/
+*.egg-info/
+dist/
+build/
+
+# SQLite Database
+app.db
+app.db-journal
+
+# spaCy models/data (if downloaded outside virtual environment or if installed locally)
+# Consider if you're explicitly installing them into your project or globally.
+# If using poetry to install them as dependencies, they might not need this.
+# However, if you download them manually, they might end up in a local directory.
+# For the provided plan, spaCy models are installed via poetry's URL dependency,
+# so this might not be strictly necessary, but it's good practice for any local downloads.
+# en_core_web_sm*
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Virtual Environment (if you use one, though Poetry manages this)
+# .venv/
+# venv/
+
+# Poetry specific files
+# poetry.lock is version controlled, but if you have temporary lock files, you might consider them.
+# However, poetry.lock should be committed.
+
+# Frontend build artifacts
+/dist/
+/public/
+
+# Node.js modules
+node_modules/
+
+# Vite specific files
+.vite/
+
+# OS specific files
+.DS_Store
+Thumbs.db

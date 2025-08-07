@@ -1,0 +1,18 @@
+Project setup investigation:
+
+After examining the project structure, I discovered that the expected source code files are missing from both event-web and event-backend directories.
+
+Expected files not found:
+- event-web/package.json (needed for npm install)
+- event-web/src/ directory (needed for React frontend)
+- event-backend/pyproject.toml (needed for Poetry)
+- event-backend/app/ directory (needed for FastAPI backend)
+
+The directories only contain:
+- README.md
+- .gitignore
+- package-lock.json (in event-web)
+- project_plan.txt
+- setup_help.txt
+
+This suggests the repository was not fully cloned or the source code is located elsewhere. Without the proper package.json or pyproject.toml files, we cannot install dependencies or run the project tests as requested.
